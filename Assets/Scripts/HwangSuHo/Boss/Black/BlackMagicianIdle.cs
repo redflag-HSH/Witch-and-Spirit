@@ -25,14 +25,7 @@ public class BlackMagicianIdle : BossBaseState
     }
     private void SelectNextPattern()
     {
-        float aa;
-        if (StateMachine.BlackMagician.TestCase)
-            aa = 0;
-        else
-        {
-            aa = Random.Range(0, 3);
-        }
-        int state = Mathf.FloorToInt(aa);
+        int state = Random.Range(0, 2);
         switch (state)
         {
             case 0:
@@ -40,9 +33,6 @@ public class BlackMagicianIdle : BossBaseState
                 break;
             case 1:
                 StateMachine.ChangeState(new BlackMagicianClaw());
-                break;
-            case 2:
-                StateMachine.ChangeState(new BlackMagicianLaserPattern());
                 break;
         }
     }
