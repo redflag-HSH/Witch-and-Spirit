@@ -15,20 +15,26 @@ MonoBehaviour:
   RopePrefab: {fileID: 7508860239197997289, guid: d384d07b9b53d354199a8b28fb681ae0, type: 3}
   EnemySpawns:
   - EnemyPrefab: {fileID: 586411614274572012, guid: 992a249cc9995f04cbcac3f0dfae61f5, type: 3}
-    Count: 4
+    Count: 2
   - EnemyPrefab: {fileID: 586411614274572012, guid: 45dd29721168ab94ea372847903ed0d1, type: 3}
-    Count: 4
+    Count: 2
   - EnemyPrefab: {fileID: 586411614274572012, guid: 7b4748894ee566048acc4bc1588bba4f, type: 3}
-    Count: 4
+    Count: 2
   - EnemyPrefab: {fileID: 2918352339638155225, guid: 5b380f02f5b87944b8f58c0ea6df548a, type: 3}
-    Count: 4
+    Count: 3
   - EnemyPrefab: {fileID: 2736584614556256618, guid: a63a6edbf7516244f8ce63b5a3bf4f99, type: 3}
-    Count: 4
+    Count: 3
   - EnemyPrefab: {fileID: 1154845851642834641, guid: 6520cac900ac7534ba261ab28c6cea99, type: 3}
-    Count: 4
-  MaxSpawn: 6
-  SpawnSpan: 5
+    Count: 3
+  - EnemyPrefab: {fileID: 2090229345201869600, guid: 8ea39a7e9cd4dd740a2208a1c371608e, type: 3}
+    Count: 1
+  - EnemyPrefab: {fileID: 4491146011954820092, guid: e312778d0d4374a41b02df8233068b46, type: 3}
+    Count: 1
+  - EnemyPrefab: {fileID: 8455528934470926618, guid: 7a81ab1fcea7f7a4f8d2f51261a722c2, type: 3}
+    Count: 1
+  MaxSpawn: 4
+  SpawnSpan: 6
   SpawnZPos:
-  - 7
-  - 12
+  - 9
+  - 15
   SpawnYPos: 0
