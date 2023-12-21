@@ -4176,7 +4176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44718db8c56e2694b94c4addb5ae3d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initHP: 300
+  initHP: 200
   _elementType: 4
   BossName: "\uB9C8\uB974\uC140\uB9AC\uC6B0\uC2A4 \uD734\uACE0"
   _rotationPow: 120
@@ -4187,6 +4187,8 @@ MonoBehaviour:
   _phase2Model: {fileID: 407703307405396408}
   _weakHeight: 3
   _weakDagger: {fileID: 8360935918838135048, guid: 769e24fc3b101c64ab9da9f4c876eed4, type: 3}
+  ShootSound: {fileID: 8300000, guid: cf89e754f2bbc4f4e87a30d8364fd291, type: 3}
+  ShootDagger: {fileID: -8760447939717194727, guid: 8ca5af36a3192ac45b5748c569d77541, type: 3}
   SYO: {fileID: 990921269152552104}
   ULTLsr2: {fileID: 5890520789984632995}
   SecPhase: 0

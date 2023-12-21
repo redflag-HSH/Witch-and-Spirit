@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StageNum: 5
   MapObject: {fileID: 5919588515086603650, guid: a4862bec3d0390a41a5c9e8f38531a82, type: 3}
-  BackgroundMusic: {fileID: 8300000, guid: b87e246171d5cd445bf549eb1f98216a, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 0a0aed6a5d1011546b7212b850538904, type: 3}
   Skybox: {fileID: 2100000, guid: 66e5e90250885384890c1321900239ee, type: 2}
   FogColor: {r: 0.46939996, g: 0.36102706, b: 0.5754717, a: 1}
   FogDensity: 0.0015

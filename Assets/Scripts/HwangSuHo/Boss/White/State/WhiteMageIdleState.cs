@@ -20,11 +20,14 @@ public class WhiteMageIdleState : BossBaseState
             _count += Time.deltaTime;
         else
         {
-            int a = 0;
+            int a = Random.Range(0, 2);
             switch (a)
             {
                 case 0:
                     StateMachine.ChangeState(new WhiteMageWeakShotState());
+                    break;
+                case 1:
+                    StateMachine.ChangeState(new WhiteMageShotDaggerState());
                     break;
             }
             //아이들 카운트 if 문
