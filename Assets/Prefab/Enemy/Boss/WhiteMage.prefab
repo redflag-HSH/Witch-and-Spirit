@@ -4190,7 +4190,7 @@ MonoBehaviour:
   SYO: {fileID: 990921269152552104}
   ULTLsr2: {fileID: 5890520789984632995}
   SecPhase: 0
-  TestCase: 1
+  TestCase: 0
   _maxUltStack: 0
 --- !u!114 &1265000654343310172
 MonoBehaviour:
@@ -4206,6 +4206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BlackMagician: {fileID: 0}
   WhiteMagician: {fileID: 6689514184144016837}
+  _currentStateName: 
 --- !u!1 &6313747909989265053
 GameObject:
   m_ObjectHideFlags: 0
