@@ -5,29 +5,39 @@ using UnityEngine;
 public class BlackMagicianClaw : BossBaseState
 {
     float _count;
-    float _readyCount;
-    float _afterCount;
+    float _readyCount=0.5f;
+    float _afterCount=3.5f;
     public override void Enter()
     {
-        throw new System.NotImplementedException();
+
     }
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        StateMachine.BlackMagician.IsSlashing = false;
     }
 
     public override void Perform()
     {
-        if (_count < _readyCount)
-            _count += Time.deltaTime;
+        if (!StateMachine.BlackMagician.IsSlashing)
+        {
+            if (_count < _readyCount)
+                _count += Time.deltaTime;
+            else
+            {
+                StateMachine.BlackMagician.IsSlashing = true;
+                StateMachine.BlackMagician.MotionAnimator.SetTrigger("Claw");
+                _count = 0;
+            }
+        }
         else
         {
-
-            //팔 휘두르기 애니메이션
-            //Hovl 스튜디오의 지상 쇼크웨이브 애니메이션
-            //판정 애니메이션
-            //dile로 넘기기
+            if (_count < _afterCount)
+                _count += Time.deltaTime;
+            else
+            {
+                StateMachine.ChangeState(new BlackMagicianIdle());
+            }
         }
     }
 }
