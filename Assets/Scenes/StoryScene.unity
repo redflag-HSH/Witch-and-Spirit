@@ -508,6 +508,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2003277896}
     - target: {fileID: 4668251043755076749, guid: fbc8f4a57877e2b46b37db181d0ee8b1, type: 3}
+      propertyPath: NameNull
+      value: 
+      objectReference: {fileID: 21300000, guid: 3dd765056899d8c4483dafcd7f5ff5f9, type: 3}
+    - target: {fileID: 4668251043755076749, guid: fbc8f4a57877e2b46b37db181d0ee8b1, type: 3}
       propertyPath: talkAudio
       value: 
       objectReference: {fileID: 1614953154}

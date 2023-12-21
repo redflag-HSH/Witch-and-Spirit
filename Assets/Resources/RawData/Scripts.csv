@@ -22,6 +22,7 @@
 4,오브,BG_Stage4_1,Orb_Surprise,WhiteMage_Surprised,저 남자 위험하다!,Talkbox_Idle,Y
 4,오브,BG_Stage4_1,Orb_Pain,WhiteMage_Surprised,어서 전투 준비를!!,Talkbox_Idle,Y
 ,,,,,,,
+5,,WhiteEnding,,,,NullBox,
 5,백마법사,BG_Stage5_1,Orb_Idle,WhiteMage_Glare,이 얘기가 너한테 들릴지는 몰라도 얘기해주마....,Talkbox_Idle,
 5,백마법사,BG_Stage5_1,Orb_Idle,WhiteMage_Glare,너는 이 세계의 균형을 지키기 위해 만들어진 존재다.,Talkbox_Idle,
 5,백마법사,BG_Stage5_1,Orb_Idle,WhiteMage_Glare,어둠의 정령들이 이 세계로 쏟아져 들어오는 차원문을 봉인하기 위해..,Talkbox_Idle,
@@ -50,6 +51,7 @@
 8,오브,BG_Stage7_1,Orb_Idle,BlackMage_Idle,저건.. 에버그린!,Talkbox_Idle,
 8,오브,BG_Stage7_1,Orb_Idle,BlackMage_Idle,에버그린을 해방시켜야 해!,Talkbox_Idle,Y
 ,,,,,,,
+9,,BlackEnding,,,,NullBox,
 9,오브,BG_Stage8_1,Orb_Pain,BlackMage_Pain,에…에버그린?,Talkbox_Idle,Y
 9,흑마법사,BG_Stage8_1,Orb_Pain,BlackMage_Pain,크으윽….,Talkbox_Idle,Y
 9,오브,BG_Stage8_1,Orb_Idle,BlackMage_Pain,에버그린 괜찮아…?,Talkbox_Idle,
