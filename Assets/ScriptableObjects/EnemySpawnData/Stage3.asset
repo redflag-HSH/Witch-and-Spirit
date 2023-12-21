@@ -15,11 +15,11 @@ MonoBehaviour:
   RopePrefab: {fileID: 7508860239197997289, guid: d384d07b9b53d354199a8b28fb681ae0, type: 3}
   EnemySpawns:
   - EnemyPrefab: {fileID: 586411614274572012, guid: 992a249cc9995f04cbcac3f0dfae61f5, type: 3}
-    Count: 3
+    Count: 5
   - EnemyPrefab: {fileID: 586411614274572012, guid: 45dd29721168ab94ea372847903ed0d1, type: 3}
-    Count: 3
+    Count: 5
   - EnemyPrefab: {fileID: 586411614274572012, guid: 7b4748894ee566048acc4bc1588bba4f, type: 3}
-    Count: 3
+    Count: 5
   - EnemyPrefab: {fileID: 2918352339638155225, guid: 5b380f02f5b87944b8f58c0ea6df548a, type: 3}
     Count: 2
   - EnemyPrefab: {fileID: 1154845851642834641, guid: 6520cac900ac7534ba261ab28c6cea99, type: 3}
