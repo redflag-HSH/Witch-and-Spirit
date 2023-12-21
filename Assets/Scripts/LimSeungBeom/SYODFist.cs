@@ -10,8 +10,6 @@ public class SYODFist : MonoBehaviour
 
     private void Awake()
     {
-        //Player = GameObject.FindWithTag("Player");    //실제 보스에 적용 시 이 문을 삭제할 것.
-
         
         Player = GameManager.Instance.Player.gameObject;
         PlayerScript = Player.GetComponent<Player>();
@@ -24,6 +22,7 @@ public class SYODFist : MonoBehaviour
 
     void Update()
     {
+
         transform.position += Time.deltaTime * speed * transform.forward;
     }
 

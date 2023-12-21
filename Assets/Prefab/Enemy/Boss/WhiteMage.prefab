@@ -5058,9 +5058,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa93de1160f09fc45956dbe92ca4bf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpreadX: 0
-  SpreadY: 0
-  SpreadZ: 0
+  SpreadX: 2
+  SpreadY: 1
+  SpreadZ: 2
   FistCoolTime: 0
   SunlightYellowOverdrive_Fist: {fileID: 3569232037958897796, guid: 6e4968e8ac9f52142af86a642d58709e, type: 3}
 --- !u!1 &8225070143116056347

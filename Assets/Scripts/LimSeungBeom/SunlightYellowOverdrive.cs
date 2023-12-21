@@ -19,8 +19,6 @@ public class SunlightYellowOverdrive : MonoBehaviour
     float ex3;
     [SerializeField] GameObject SunlightYellowOverdrive_Fist;
 
-    Transform SavedPlayerPosition;
-
     GameObject[] Fists = new GameObject[30];
 
 
@@ -78,7 +76,6 @@ public class SunlightYellowOverdrive : MonoBehaviour
         ex = Random.Range(-SpreadX, SpreadX);
         ex2 = Random.Range(-SpreadY, SpreadY);
         ex3 = Random.Range(-SpreadZ, SpreadZ);
-        SavedPlayerPosition = GameManager.Instance.Player.transform;
         if (Index >= Fists.Length)
             Index -= Fists.Length;
         GameObject ActivatedFist = Fists[Index];
@@ -89,8 +86,11 @@ public class SunlightYellowOverdrive : MonoBehaviour
             FistsArrIndex = 0;
         }
         ActivatedFist.SetActive(true);
-        ActivatedFist.transform.LookAt(GameManager.Instance.Player.transform.position);
+
         ActivatedFist.transform.position = new Vector3(this.transform.position.x + ex, this.transform.position.y + ex2, this.transform.position.z + ex3);
+        ActivatedFist.transform.LookAt(GameManager.Instance.Player.transform.position);
+
+        print("주먹 방향 변경 : " + ActivatedFist.transform.eulerAngles);
 
         yield return new WaitForSeconds(5);
 

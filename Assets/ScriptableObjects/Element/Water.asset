@@ -21,3 +21,4 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: b2381b8c9ffa6d2449431d46c840a778, type: 3}
   CircleRotation: 180
   SkillCooldown: 10
+  ShootVolume: 0.6

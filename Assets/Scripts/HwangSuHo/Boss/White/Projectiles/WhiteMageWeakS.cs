@@ -11,11 +11,12 @@ public class WhiteMageWeakS : Projectile
     [SerializeField] GameObject _warn;
     [Header("Model Parameter")]
     [SerializeField] GameObject[] _models;
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(Motor());
     }
+
     IEnumerator Motor()
     {
         _warn.SetActive(true);
@@ -23,14 +24,22 @@ public class WhiteMageWeakS : Projectile
         _warn.SetActive(false);
         _isDroping = true;
     }
-    // Update is called once per frame
+
     protected override void Update()
     {
         if (_isDroping)
             base.Update();
     }
+
     public void ModelSet(int index)
     {
         _models[index].SetActive(true);
+    }
+
+    protected override void OnTriggerEnter(Collider other)
+    {
+        base.OnTriggerEnter(other);
+        print("WeakTrigger " + other.gameObject);
+
     }
 }

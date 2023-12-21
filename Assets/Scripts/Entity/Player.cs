@@ -251,7 +251,7 @@ public class Player : Entity
             projectile.transform.forward = dir;
             projectile.CameraOffset = projectile.transform.position - Camera.main.transform.position;
             projectile.Owner = this;
-            GameManager.Instance.SoundManager.PlaySFX(CurrentElement.ShootSound, transform);
+            GameManager.Instance.SoundManager.PlaySFX(CurrentElement.ShootSound, transform, CurrentElement.ShootVolume);
         }
     }
 

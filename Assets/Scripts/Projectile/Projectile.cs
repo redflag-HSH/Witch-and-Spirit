@@ -27,6 +27,7 @@ public class Projectile : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
+        print("Trigger " + other.gameObject);
         if (other.TryGetComponent(out Entity ent) && (Owner is Player) != (ent is Player))
         {
             ent.Damage(Damage, ElementType);

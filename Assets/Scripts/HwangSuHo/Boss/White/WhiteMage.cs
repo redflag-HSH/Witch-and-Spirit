@@ -27,6 +27,7 @@ public class WhiteMage : Boss
     public BossLaser2 ULTLsr2;
 
     public bool SecPhase = false;
+    private bool _isPhaseChanging = false;
 
     [SerializeField] bool TestCase;
 
@@ -48,6 +49,7 @@ public class WhiteMage : Boss
         _stateMachine.ChangeState(new WhiteMageIdleState());
         _playerPos = GameManager.Instance.Player.transform;
     }
+
     private void Update()
     {
         StaringCheck();
@@ -62,8 +64,9 @@ public class WhiteMage : Boss
     //50% 남았을때 인지 아닌지 확인
     public bool SecondPhaseCheck()
     {
-        if (HP < 150)
+        if (HP < 150 && !_isPhaseChanging)
         {
+            _isPhaseChanging = true;
             _stateMachine.ChangeState(new WhiteMageSecondIdle());
             _phase2Model.gameObject.SetActive(true);
             _phase1Model.SetActive(false);
@@ -78,7 +81,7 @@ public class WhiteMage : Boss
     {
         GameObject ii = Instantiate(_weakDagger, new Vector3(_playerPos.position.x, _weakHeight, _playerPos.position.z), transform.rotation).gameObject;
         ii.transform.forward = Vector3.down;
-        int a = Mathf.FloorToInt(Random.Range(0, 5));
+        int a = Random.Range(0, 4);
         if (SecPhase)
             a = 3;
         ii.GetComponent<WhiteMageWeakS>().ModelSet(a);

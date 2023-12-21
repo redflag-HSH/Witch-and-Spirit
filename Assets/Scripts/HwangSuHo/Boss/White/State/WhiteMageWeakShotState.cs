@@ -26,7 +26,12 @@ public class WhiteMageWeakShotState : BossBaseState
     public override void Perform()
     {
         if (_index <= 0)
-            StateMachine.ChangeState(new WhiteMageSecondIdle());
+        {
+            if(StateMachine.WhiteMagician.SecPhase)
+                StateMachine.ChangeState(new WhiteMageSecondIdle());
+            else
+                StateMachine.ChangeState(new WhiteMageIdleState());
+        }
         else if (_count < .3f)
             _count += Time.deltaTime;
         else

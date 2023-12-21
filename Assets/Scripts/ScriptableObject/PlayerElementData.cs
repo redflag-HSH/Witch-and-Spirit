@@ -12,6 +12,7 @@ public class PlayerElementData : ScriptableObject
     public AudioClip ShootSound;
     public float CircleRotation;
     public float SkillCooldown;
+    public float ShootVolume = 1f;
 }
 
 public enum ElementType

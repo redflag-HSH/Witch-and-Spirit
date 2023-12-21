@@ -7,6 +7,7 @@ public class WhiteMageSecondIdle : BossBaseState
     float _count = 0, _maxcount = 1;
     public override void Enter()
     {
+        Debug.Log("세컨드 입장");
     }
     public override void Exit()
     {

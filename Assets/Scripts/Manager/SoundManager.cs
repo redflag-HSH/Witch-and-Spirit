@@ -73,7 +73,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip, Transform parent, float volume = 1f, float pitch = 1f)
     {
-        print(clip);
         PlaySFX(clip, parent.position, volume, pitch, parent);
     }
 
