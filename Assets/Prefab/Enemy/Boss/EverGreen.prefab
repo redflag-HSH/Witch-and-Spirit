@@ -21542,7 +21542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1bc9203bc90dd4cb65d6d892a3b729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initHP: 500
+  initHP: 280
   _elementType: 3
   BossName: "\uC5B4\uB460\uC5D0 \uC7A0\uC2DD\uB41C \uC5D0\uBC84\uADF8\uB9B0"
   _rotationPow: 200

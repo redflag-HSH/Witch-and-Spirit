@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public ElementType ElementType;
-    public float speed;
+    public float speed = 0f, accel = 0f;
     public Entity Owner;
     public int Damage = 1;
     public float DestroyDistance = 50f;
@@ -18,6 +18,7 @@ public class Projectile : MonoBehaviour
     protected virtual void Update()
     {
         transform.position += Time.deltaTime * speed * transform.forward;
+        speed += accel * Time.deltaTime;
 
         var movement = Time.deltaTime * 6f;
 

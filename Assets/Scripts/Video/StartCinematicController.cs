@@ -28,6 +28,12 @@ public class StartCinematicController : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            _videoPlayer.Stop();
+            SceneManager.LoadScene(nextSceneName);
+        }
+
         if(_videoPlayer.time > 1f && !_videoPlayer.isPlaying)
         {
             SceneManager.LoadScene(nextSceneName);

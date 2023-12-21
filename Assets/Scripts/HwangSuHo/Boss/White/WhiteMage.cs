@@ -22,6 +22,8 @@ public class WhiteMage : Boss
 
     [SerializeField] float _weakHeight;
     [SerializeField] Projectile _weakDagger;
+    public AudioClip ShootSound;
+    public Projectile ShootDagger;
 
     public SunlightYellowOverdrive SYO;
     public BossLaser2 ULTLsr2;
@@ -64,7 +66,7 @@ public class WhiteMage : Boss
     //50% 남았을때 인지 아닌지 확인
     public bool SecondPhaseCheck()
     {
-        if (HP < 150 && !_isPhaseChanging)
+        if (HP < MaxHP * 0.6f && !_isPhaseChanging)
         {
             _isPhaseChanging = true;
             _stateMachine.ChangeState(new WhiteMageSecondIdle());
