@@ -14,6 +14,7 @@ public class TextUiEx : MonoBehaviour
     public Image BackgroundImage;
     public Image TalkBox;
     public Image NameBack;
+    public Sprite NameNull;
     public Sprite NameBackSprite;
     public AudioSource talkAudio;
     public CanvasGroup BlackScreen;
@@ -83,6 +84,14 @@ public class TextUiEx : MonoBehaviour
         {
             _waitForSkip = true;
         }
+        if (DisplayNameText.text == "")
+        {
+            NameBack.sprite = NameNull;
+        }
+        else
+        {
+            NameBack.sprite = NameBackSprite;
+        }
     }
 
     IEnumerator TextPractice()
@@ -107,7 +116,6 @@ public class TextUiEx : MonoBehaviour
             yield return null;
         }
         BlackScreen.alpha = 1f;
-        ending = true;
 
         if (_recentStageData == null)
         {
@@ -149,28 +157,13 @@ public class TextUiEx : MonoBehaviour
         ApplyChatSituation(chat);
         if (ending == true)
         {
+            for (var i = 0f; i <= 1f; i += Time.deltaTime)
+            {
+                BlackScreen.alpha = 1 - i;
+                yield return null;
+            }
+            BlackScreen.alpha = 0f;
             ending = false;
-            for (var i = 0f; i <= 1f; i += Time.deltaTime)
-            {
-                BlackScreen.alpha = 1 - i;
-                yield return null;
-            }
-            BlackScreen.alpha = 0f;
-        }
-        if (chat.DisplayName=="")
-        {
-            NameBack.sprite = chat.TalkboxImage;
-            for (var i = 0f; i <= 1f; i += Time.deltaTime)
-            {
-                BlackScreen.alpha = 1 - i;
-                yield return null;
-            }
-            BlackScreen.alpha = 0f;
-            ending = true;
-        }
-        else
-        {
-            NameBack.sprite = NameBackSprite;
         }
 
         if (chat.Shake)
@@ -191,6 +184,11 @@ public class TextUiEx : MonoBehaviour
         talkAudio.Stop();
 
         TalkBox.GetComponent<UIPanelShake>().EndShake();
+
+        if (DisplayNameText.text == "")
+        {
+            ending = true;
+        }
 
         yield return null;
         while (!(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))) yield return null;
