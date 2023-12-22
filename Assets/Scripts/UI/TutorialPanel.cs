@@ -15,7 +15,7 @@ public class TutorialPanel : MonoBehaviour
     private void Update()
     {
         timer += Time.unscaledDeltaTime;
-        if(Input.GetKeyDown(KeyCode.Return) && timer > 0.5f)
+        if((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && timer > 0.5f)
         {
             gameObject.SetActive(false);
             if(NextPanel != null)

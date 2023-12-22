@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ENTER
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05a2e047513c6584797ad0278320de3a, type: 2}
   m_sharedMaterial: {fileID: -804051710038004224, guid: 05a2e047513c6584797ad0278320de3a, type: 2}
@@ -1601,7 +1601,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uC6D0\uC18C\uB97C \uBCC0\uACBD\uD560 \uC2DC \uC6D0\uC18C \uACE0\uC720\uC758
-    \uC2A4\uD0AC\uC774 \uBC1C\uB3D9\uB418\uBA70, \n\n\uBC15\uC2A4 \uCE5C \uBD80\uBD84\uC5D0\uC11C
+    \uC2A4\uD0AC\uC774 \uBC1C\uB3D9\uB418\uBA70, \n\n<color=#ff5500>\uBD88</color>\uC758
+    \uC2A4\uD0AC\uC744 \uC0AC\uC6A9\uD558\uBA74 \uACF5\uACA9\uC18D\uB3C4\uAC00 \uC7A0\uC2DC\uB3D9\uC548
+    \uBE68\uB77C\uC9D1\uB2C8\uB2E4.\n<color=green>\uD480</color>\uC758 \uC2A4\uD0AC\uC744
+    \uC0AC\uC6A9\uD558\uBA74 \uCCB4\uB825\uC744 \uD68C\uBCF5\uD569\uB2C8\uB2E4.\n<color=#0055ff>\uBB3C</color>\uC758
+    \uC2A4\uD0AC\uC744 \uC0AC\uC6A9\uD558\uBA74 \uC7A0\uC2DC\uB3D9\uC548 \uBB34\uC801
+    \uC0C1\uD0DC\uAC00 \uB429\uB2C8\uB2E4.\n\n\uBC15\uC2A4 \uCE5C \uBD80\uBD84\uC5D0\uC11C
     \uD604\uC7AC \uC6D0\uC18C\uC758 \uC885\uB958\uC640 \n<color=#ff5500>\uBD88</color>,
     <color=green>\uD480</color>, <color=#0055ff>\uBB3C</color> \uC2A4\uD0AC\uC758
     \uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. "

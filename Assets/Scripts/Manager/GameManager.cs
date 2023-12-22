@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public Player Player;
+    public Boss Boss;
     public DamageScreen DamageScreen;
     public Image HeartBeatScreen;
     public CanvasGroup BlackScreen;
@@ -25,10 +26,10 @@ public class GameManager : MonoBehaviour
         Instantiate(StageManager.CurrentStageData.MapObject, Vector3.zero, Quaternion.identity);
         if(StageManager.CurrentStageData is BossStageData bossStageData)
         {
-            var boss = Instantiate(bossStageData.Boss, Vector3.zero, Quaternion.identity);
-            Player.Boss = boss.transform;
-            BossCamera.Boss = boss.transform;
-            BossTitle.SetText(boss.BossName);
+            Boss = Instantiate(bossStageData.Boss, Vector3.zero, Quaternion.identity);
+            Player.Boss = Boss.transform;
+            BossCamera.Boss = Boss.transform;
+            BossTitle.SetText(Boss.BossName);
         }
 
         RenderSettings.skybox = StageManager.CurrentStageData.Skybox;

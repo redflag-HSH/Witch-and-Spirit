@@ -11,6 +11,9 @@ public class BlackMagician : Boss
     [SerializeField] float _rotationPow;
     [SerializeField] float _turnDegree;
     [SerializeField] float _stareDegree;
+    
+    public AudioClip ShootSound;
+    public Projectile ShootProjectile;
 
     Player _player;
 

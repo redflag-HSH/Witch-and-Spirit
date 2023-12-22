@@ -21548,6 +21548,8 @@ MonoBehaviour:
   _rotationPow: 200
   _turnDegree: 120
   _stareDegree: 16
+  ShootSound: {fileID: 8300000, guid: 0711e03efad29c1409e25bcab70a39b9, type: 3}
+  ShootProjectile: {fileID: -8760447939717194727, guid: 13e0a7f1728f5474681fc8a9837cdfc2, type: 3}
   FirstSlashReadyCount: 1.8
   SecondSlashReadyCount: 1.5
   ThirdSlashReadyCount: 3
@@ -27633,6 +27635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ElementType: 3
   speed: 0
+  accel: 0
   Owner: {fileID: 3929071807136420017}
   Damage: 1
   DestroyDistance: 50
@@ -63928,6 +63931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ElementType: 3
   speed: 0
+  accel: 0
   Owner: {fileID: 3929071807136420017}
   Damage: 1
   DestroyDistance: 50

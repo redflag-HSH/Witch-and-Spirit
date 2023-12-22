@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class WhiteMage : Boss
 {
@@ -24,6 +23,7 @@ public class WhiteMage : Boss
     [SerializeField] Projectile _weakDagger;
     public AudioClip ShootSound;
     public Projectile ShootDagger;
+
 
     public SunlightYellowOverdrive SYO;
     public BossLaser2 ULTLsr2;

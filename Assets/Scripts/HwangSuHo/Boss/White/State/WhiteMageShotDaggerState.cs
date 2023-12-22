@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WhiteMageShotDaggerState : BossBaseState
 {
-
     public override void Enter()
     {
         int count = Random.Range(8, 20);

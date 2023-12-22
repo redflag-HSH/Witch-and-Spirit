@@ -14,12 +14,20 @@ public class BossCameraMove : MonoBehaviour
 
     private void Awake()
     {
+        StartCoroutine(InitAwake());
+    }
+
+    private IEnumerator InitAwake()
+    {
+        yield return new WaitUntil(() => Boss != null);
         var bossDir = (transform.position - Boss.position);
         _distance = bossDir.magnitude;
+
     }
 
     private void LateUpdate()
     {
+        if (Boss == null) return;
         var cameraBossDir = (Boss.position - transform.position);
         var angles = transform.eulerAngles;
         angles.y = Mathf.Atan2(cameraBossDir.x, cameraBossDir.z) * Mathf.Rad2Deg;
